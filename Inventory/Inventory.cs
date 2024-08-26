@@ -12,7 +12,14 @@ public class Inventory
        // Console.WriteLine(product.name);
     }
    
-
+    public void View_all_products()
+    {
+        foreach (Product pr in product)
+        {
+            Console.WriteLine($"Name Product : {pr.name} , Price Product : {pr.price} , Quantity : {pr.quantity}");
+        }
+    }
+    
 
 
 
