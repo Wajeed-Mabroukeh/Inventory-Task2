@@ -42,6 +42,13 @@ class Programs
         }
         I1.View_all_products();
         
-       // Console.WriteLine("d");
+        /////Search
+        Product? pr_Result_Search_S = I1.Search_With_name("Jus");
+        if (!(pr_Result_Search_S == null))
+        {
+            I1.Search_for_a_product(pr_Result_Search_S);
+        }
+        I1.View_all_products();
+        
     }
 }

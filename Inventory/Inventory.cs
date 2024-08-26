@@ -35,6 +35,14 @@ public class Inventory
         Console.WriteLine($"Successful Delete Product {name}");
     }
 
+    public void Search_for_a_product(Product pr_disaply)
+    {
+        Console.WriteLine($"The Result Search is "+
+                          $"Name product ({pr_disaply.name})" +
+                          $", Price Product ({pr_disaply.price}) ," +
+                          $" Quantity Product ({pr_disaply.quantity})");
+    }
+    
     public Product Search_With_name(string name)
     {
         Product? pr_test = null;
@@ -51,7 +59,7 @@ public class Inventory
     }
 
 
-    
+   
 
 
 }
