@@ -2,9 +2,9 @@
 
 public class Product
 {
-    public string name { get; private set; }
-    public double price { get; private set; }
-    public int quantity { get; private set; }
+    public string name { get; internal set; }
+    public double price { get; internal set; }
+    public int quantity { get; internal set; }
 
     public Product(string name ,double price , int quantity )
     {
