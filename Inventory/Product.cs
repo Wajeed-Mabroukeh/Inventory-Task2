@@ -2,11 +2,11 @@
 
 public class Product
 {
-    private string name { get; set; }
-    private double price { get; set; }
-    private int quantity { get; set; }
+    public string name { get; private set; }
+    public double price { get; private set; }
+    public int quantity { get; private set; }
 
-    Product(string name ,double price , int quantity )
+    public Product(string name ,double price , int quantity )
     {
         this.price = price;
         this.name = name;
