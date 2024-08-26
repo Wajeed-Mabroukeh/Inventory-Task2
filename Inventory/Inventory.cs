@@ -6,13 +6,21 @@ public class Inventory
     public void Add_a_product(Product product )
     {
         this.product.Add(product);
+        Console.WriteLine("Successful Add Product ");
     }
    
     public void View_all_products()
     {
-        foreach (Product pr in product)
+        if (product.Count != 0)
         {
-            Console.WriteLine($"Name Product : {pr.name} , Price Product : {pr.price} , Quantity : {pr.quantity}");
+            foreach (Product pr in product)
+            {
+                Console.WriteLine($"Name Product : {pr.name} , Price Product : {pr.price} , Quantity : {pr.quantity}");
+            }
+        }
+        else
+        {
+            Console.WriteLine("The List of Product is Empty");
         }
     }
 
@@ -54,7 +62,7 @@ public class Inventory
                 return pr;
             }
         }
-        Console.WriteLine(pr_test == null ? "The value is not Exit" : "jj");
+        Console.WriteLine(pr_test == null ? "The value is not Exit" : "");
         return null;
     }
 
