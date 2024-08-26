@@ -1,7 +1,4 @@
 ﻿namespace Inventory;
-
-
-
 public class Inventory
 {
     private  List<Product> product = new List<Product>();
@@ -31,6 +28,13 @@ public class Inventory
         Console.WriteLine($"Successful Edit on Product old {name_old}, {price_old},{quantity_old} to Product new {pr_new.name},{pr_new.price},{pr_new.quantity} ");
     }
 
+    public void Delete_a_product(Product pr_Delete)
+    {
+        string name = pr_Delete.name;
+        product.Remove(pr_Delete);
+        Console.WriteLine($"Successful Delete Product {name}");
+    }
+
     public Product Search_With_name(string name)
     {
         Product? pr_test = null;
@@ -47,6 +51,7 @@ public class Inventory
     }
 
 
+    
 
 
 }
