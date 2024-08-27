@@ -37,6 +37,5 @@ This project uses Git for version control. Each major action (add, view, edit, d
 ## Contribution
 Contributions are welcome! Please fork the repository and submit a pull request with your changes.
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+
                                                                                                                                               
